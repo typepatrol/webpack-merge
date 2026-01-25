@@ -48,7 +48,13 @@
   "jest": {
     "collectCoverage": true,
     "collectCoverageFrom": [
-      "dist/*.js"
+      "src/**/*.ts",
+      "!src/**/*.test.ts",
+      "!src/**/__tests__/**"
+    ],
+    "coverageReporters": [
+      "text",
+      "lcov"
     ]
   },
   "license": "MIT",
